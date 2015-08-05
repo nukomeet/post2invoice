@@ -1,0 +1,19 @@
+<%=
+  h = {
+    "client" => {
+      "name" => resource.client.name,
+      "vat-id" => resource.client.vat_id
+    },
+    "unit" => resource.unit.name,
+    "quantity" => resource.quantity,
+    "netto_price" => resource.netto_price,
+    "brutto_price" => resource.brutto_price,
+    "vat_price" => resource.vat_price,
+    "vat_name" => resource.vat.name,
+    "category" => "Hosting",
+    "description" => resource.desc,
+    "month" => "04"
+  }
+
+  raw h.to_json
+%>
