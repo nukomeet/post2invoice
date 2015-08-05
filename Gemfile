@@ -21,6 +21,12 @@ gem 'thin'
 gem 'newrelic_rpm'
 gem 'web-console', '~> 2.0'
 
+gem 'cancancan'
+gem 'inherited_resources'
+gem 'has_scope'
+gem 'responders'
+gem 'kaminari'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'

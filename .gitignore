@@ -1,4 +1,4 @@
-#----------------------------------------------------------------------------
+v----------------------------------------------------------------------------
 # Ignore these files when commiting to a git repository.
 #
 # See http://help.github.com/ignore-files/ for more about ignoring files.
@@ -83,6 +83,7 @@ pickle-email-*.html
 .env.staging
 
 .ruby-version
+.rvmrc
 
 # Ignore compiled assets
 public/assets

@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
+  resources :invoices
+
   devise_for :users,
     path: "",
     controllers: { registrations: "registrations" },
     path_names: { sign_in: 'login', password: 'forgot', confirmation: 'confirm', unlock: 'unblock', sign_up: 'register', sign_out: 'signout'}
   as :user do
   end
-
-  post '/invoices', to: 'home#invoices'
 
   authenticated :user do
     root to: 'home#dashboard', as: :authenticated_root
