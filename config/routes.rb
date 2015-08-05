@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   as :user do
   end
 
+  post '/invoices', to: 'home#invoices'
+
   authenticated :user do
     root to: 'home#dashboard', as: :authenticated_root
   end
@@ -16,4 +18,5 @@ Rails.application.routes.draw do
   root to: 'home#index'
 
   resources :users
+
 end
